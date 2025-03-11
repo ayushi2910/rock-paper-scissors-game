@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <button id="themeToggle">🌞 Toggle Theme</button>
+    <div class="navbar">Rock Paper Scissors Game</div>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your move:</p>
+        <button class="rock choice" onclick="playGame('rock')" data-tip="Rock beats Scissors!">🪨 Rock</button>
+        <button class="paper choice" onclick="playGame('paper')" data-tip="Paper beats Rock!">📄 Paper</button>
+        <button class="scissors choice" onclick="playGame('scissors')" data-tip="Scissors beats Paper!">✂️ Scissors</button>
+        <p class="result" id="result"></p>
+        <p class="score">Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span></p>
+        <button class="restart" onclick="resetGame()">🔄 Restart</button>
+    </div>
+    <p class="footer">© 2025 Ayushi Ranjan. All Rights Reserved.</p>
+    
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="loseSound" src="lose.mp3"></audio>
+    <audio id="clickSound" src="click.mp3"></audio>
+    
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursorText"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
